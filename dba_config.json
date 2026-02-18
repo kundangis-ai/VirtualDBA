@@ -1,0 +1,7 @@
+{
+  "host": "localhost",
+  "port": 1521,
+  "username": "sys",
+  "service_name": "ORCL",
+  "password": "oracle123"
+}

@@ -1,0 +1,80 @@
+{
+  "export_time": "2026-02-18T19:01:22.360914",
+  "users": {
+    "TESTUSER": {
+      "password_hash": "13d249f2cb4127b40cfa757866850278793f814ded3c587fe5889e889a7a9f6c",
+      "created_date": "2026-02-18T19:01:22.360780",
+      "account_status": "OPEN",
+      "tablespace": "USERS",
+      "privileges": [
+        "SELECT",
+        "INSERT"
+      ],
+      "expiry_date": "2027-02-18T19:01:22.360773"
+    }
+  },
+  "tablespaces": {
+    "TESTSPACE": {
+      "name": "TESTSPACE",
+      "status": "ONLINE",
+      "size_mb": 512,
+      "used_mb": 0,
+      "datafile": "/u01/test.dbf",
+      "created_date": "2026-02-18T19:01:22.360811"
+    }
+  },
+  "backups": [
+    {
+      "backup_id": "3edc546c",
+      "type": "FULL",
+      "timestamp": "2026-02-18T19:01:22.360841",
+      "location": "./test_backups",
+      "status": "COMPLETED",
+      "size_mb": 1024
+    }
+  ],
+  "audit_log": [
+    {
+      "timestamp": "2026-02-18T19:01:22.360794",
+      "action": "CREATE_USER",
+      "result": "SUCCESS",
+      "details": "User testuser created in tablespace USERS"
+    },
+    {
+      "timestamp": "2026-02-18T19:01:22.360802",
+      "action": "GRANT_PRIVILEGE",
+      "result": "SUCCESS",
+      "details": "Privilege SELECT granted to testuser"
+    },
+    {
+      "timestamp": "2026-02-18T19:01:22.360806",
+      "action": "GRANT_PRIVILEGE",
+      "result": "SUCCESS",
+      "details": "Privilege INSERT granted to testuser"
+    },
+    {
+      "timestamp": "2026-02-18T19:01:22.360814",
+      "action": "CREATE_TABLESPACE",
+      "result": "SUCCESS",
+      "details": "Tablespace TESTSPACE created (512MB)"
+    },
+    {
+      "timestamp": "2026-02-18T19:01:22.360848",
+      "action": "BACKUP_DATABASE",
+      "result": "SUCCESS",
+      "details": "FULL backup completed (ID: 3edc546c)"
+    },
+    {
+      "timestamp": "2026-02-18T19:01:22.360870",
+      "action": "STATUS_CHECK",
+      "result": "SUCCESS",
+      "details": "Database status retrieved"
+    },
+    {
+      "timestamp": "2026-02-18T19:01:22.360904",
+      "action": "MONITOR_PERFORMANCE",
+      "result": "SUCCESS",
+      "details": "Performance metrics retrieved"
+    }
+  ]
+}
